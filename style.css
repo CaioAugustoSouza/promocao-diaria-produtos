@@ -1,0 +1,31 @@
+body {
+  background-color: #f5f6f8;
+}
+
+main.container {
+  max-width: 720px;
+}
+
+#tituloEditavel {
+  outline: none;
+  border-bottom: 2px dashed #ced4da;
+  padding-bottom: .25rem;
+}
+
+#tituloEditavel:focus {
+  border-bottom-color: #0d6efd;
+}
+
+#tituloEditavel:empty::before {
+  content: attr(data-placeholder);
+  color: #adb5bd;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.item-check:checked ~ .item-label {
+  text-decoration: line-through;
+  color: #6c757d;
+}
